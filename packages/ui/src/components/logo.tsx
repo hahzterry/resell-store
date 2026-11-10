@@ -44,10 +44,7 @@ export function Wordmark({
       {...props}
     >
       Bro Resell
-      <span
-        aria-hidden
-        className="mx-[0.06em] inline-block size-[0.34em] shrink-0 rounded-full bg-lemon-400"
-      />
+      <span aria-hidden />
     </span>
   );
 }
