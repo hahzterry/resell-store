@@ -26,7 +26,7 @@ const wordmarkSizes = {
 } as const;
 
 /**
- * "resell.store" in the display face, with the period drawn as a yellow dot.
+ * "broresell" in the display face, with the period drawn as a yellow dot.
  * Sized in em, so a className font size scales the dot with the text.
  */
 export function Wordmark({
@@ -43,13 +43,11 @@ export function Wordmark({
       )}
       {...props}
     >
-      resell
+      Bro Resell
       <span
         aria-hidden
         className="mx-[0.06em] inline-block size-[0.34em] shrink-0 rounded-full bg-lemon-400"
       />
-      <span className="sr-only">.</span>
-      store
     </span>
   );
 }

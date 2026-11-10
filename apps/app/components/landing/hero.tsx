@@ -10,7 +10,6 @@ import {
   authorUrl,
   bigButton,
   Container,
-  hackathonUrl,
   renderDeployUrl,
 } from "./parts";
 import { PayPalLogo } from "./paypal-logo";
@@ -78,19 +77,10 @@ export function Hero({ signedIn }: { signedIn: boolean }) {
         <div className="mt-3 flex w-fit flex-col gap-3 rounded-2xl border border-border bg-surface px-6 py-5 shadow-[0_10px_30px_-18px_rgb(0_41_145/0.45)] sm:flex-row sm:items-center sm:gap-6">
           <PayPalLogo className="h-9 w-auto shrink-0 self-start text-[#002991] sm:self-center" />
           <span aria-hidden className="hidden h-11 w-px bg-border sm:block" />
-          <div className="flex flex-col gap-0.5 text-base">
+          <div className="flex flex-col justify-center">
             <span className="font-semibold">
               Every payment runs through PayPal
             </span>
-            <a
-              href={hackathonUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-1 font-bold text-secondary hover:underline"
-            >
-              Built for the PayPal AI Hackathon
-              <ArrowUpRightIcon size={16} strokeWidth={2.6} />
-            </a>
           </div>
         </div>
         <div className="mt-4 ml-1 flex flex-wrap items-center gap-x-5 gap-y-3">
@@ -114,7 +104,7 @@ export function Hero({ signedIn }: { signedIn: boolean }) {
             rel="noreferrer"
             className="inline-flex items-center gap-1 text-sm text-text-muted hover:text-text hover:underline"
           >
-            Built by Dylan Jones
+            Built by Wizard of Hahz
             <ArrowUpRightIcon size={14} strokeWidth={2.6} />
           </a>
         </div>

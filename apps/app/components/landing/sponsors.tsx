@@ -1,9 +1,8 @@
 import type { ReactNode } from "react";
-import { Button } from "@repo/ui/button";
 import { ArrowUpRightIcon, CheckIcon } from "@repo/ui/icons";
 import { cn } from "@repo/ui/lib/utils";
 import { docsUrl } from "../../lib/urls";
-import { CheckDot, Container, hackathonUrl, SectionIntro } from "./parts";
+import { CheckDot, Container, SectionIntro } from "./parts";
 import { PayPalLogo } from "./paypal-logo";
 
 /*
@@ -317,24 +316,6 @@ export function Sponsors() {
           </div>
         </>
       )}
-
-      <div className="mt-4 flex flex-col items-start gap-5 rounded-[24px] bg-surface-muted px-6 py-7 md:flex-row md:items-center md:justify-between md:px-8">
-        <p className="max-w-[640px] text-lg font-medium">
-          There's more to the PayPal AI Hackathon than us. See every sponsor and
-          what other teams built with them.
-        </p>
-        <Button
-          variant="secondary"
-          render={
-            <a href={hackathonUrl} target="_blank" rel="noopener noreferrer" />
-          }
-          nativeButton={false}
-        >
-          See the hackathon
-          <ArrowUpRightIcon size={18} aria-hidden />
-          <span className="sr-only"> (opens in a new tab)</span>
-        </Button>
-      </div>
     </Container>
   );
 }

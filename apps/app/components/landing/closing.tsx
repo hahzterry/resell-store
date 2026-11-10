@@ -5,7 +5,7 @@ import { Wordmark } from "@repo/ui/logo";
 import { BerriesMark, SliceMark } from "@repo/ui/whimsy";
 import { cn } from "@repo/ui/lib/utils";
 import { Pop } from "./motion";
-import { bigButton, Container, githubUrl, hackathonUrl } from "./parts";
+import { bigButton, Container, githubUrl } from "./parts";
 
 /* The closing lemon panel and the dark footer. */
 
@@ -83,8 +83,6 @@ const columns = [
     links: [
       { label: "MCP link", href: "/tools/agent" },
       { label: "API", href: "/tools/api" },
-      { label: "GitHub", href: githubUrl },
-      { label: "PayPal AI Hackathon", href: hackathonUrl },
       { label: "MIT license", href: `${githubUrl}/blob/main/LICENSE` },
     ],
   },
@@ -101,13 +99,6 @@ export function LandingFooter() {
               Your closet, open for business. A personal seller for the things
               you no longer use.
             </p>
-            <a
-              href={githubUrl}
-              className="flex h-12 w-fit items-center gap-2.5 rounded-full border border-leaf-300 px-5 text-base font-semibold transition-colors hover:bg-white/10"
-            >
-              <CodeIcon size={18} strokeWidth={2.2} />
-              See the code on GitHub
-            </a>
           </div>
           <nav
             aria-label="Footer"
@@ -143,20 +134,13 @@ export function LandingFooter() {
         </div>
         <div className="flex flex-col gap-2 border-t border-leaf-600 pt-7 sm:flex-row sm:items-center sm:justify-between">
           <p className="flex items-center gap-2 text-base">
-            Made by Dylan Jones
+            Made by Wizard of Hahz
             <a
-              href="https://hidylanjones.com"
+              href="https://www.linkedin.com/in/wizard-of-hahz"
               className="font-bold text-lemon-400 hover:underline"
             >
-              hidylanjones.com
+              Linkedin
             </a>
-          </p>
-          <p className="text-sm text-white/80">
-            Built for the{" "}
-            <a href={hackathonUrl} className="underline hover:text-white">
-              PayPal AI Hackathon
-            </a>
-            , 2026. Open source under the MIT license.
           </p>
         </div>
       </Container>

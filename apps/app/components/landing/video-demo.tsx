@@ -1,10 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { ArrowUpRightIcon, CodeIcon } from "@repo/ui/icons";
 import { cn } from "@repo/ui/lib/utils";
 import { docsUrl } from "../../lib/urls";
-import { Container, githubUrl, hackathonUrl } from "./parts";
+import { Container } from "./parts";
 
 /*
  * The demo video, between the hero and "how it works". Paste a YouTube link
@@ -118,32 +117,8 @@ export function VideoDemo() {
       </div>
       <ul className="flex flex-wrap items-center justify-center gap-3">
         <li>
-          <a
-            href={githubUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={cn(pill, "bg-leaf-900 text-white hover:bg-secondary")}
-          >
-            <CodeIcon size={18} strokeWidth={2.2} />
-            See the code on GitHub
-            <span className="sr-only"> (opens in a new tab)</span>
-          </a>
-        </li>
-        <li>
           <a href={docsUrl("/")} className={cn(pill, softPill)}>
             Read the docs
-          </a>
-        </li>
-        <li>
-          <a
-            href={hackathonUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={cn(pill, softPill)}
-          >
-            PayPal AI Hackathon
-            <ArrowUpRightIcon size={16} strokeWidth={2.6} />
-            <span className="sr-only"> (opens in a new tab)</span>
           </a>
         </li>
       </ul>

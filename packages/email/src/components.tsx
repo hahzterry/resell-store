@@ -59,7 +59,7 @@ export function EmailLayout({
             <Text style={styles.footer}>{footer}</Text>
             <Text style={{ ...styles.footer, marginTop: 12 }}>
               <Link href={siteUrl} style={styles.footerLink}>
-                resell.store
+                Bro Resell
               </Link>
               {"  ·  "}Sell your stuff, with an agent that does the boring parts.
             </Text>
