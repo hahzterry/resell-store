@@ -105,15 +105,16 @@ export const auth = betterAuth({
   // Production sessions are shared across .broresell.com.
   // In development, localhost uses host-only cookies
   // and the existing one-time-token session handoff.
-
   advanced: isLocal
     ? {}
     : {
         crossSubDomainCookies: {
           enabled: true,
-          domain: `.${rootHostname}`,
+          domain: ".broresell.com",
         },
+        useSecureCookies: true,
       },
+
 
   // ==========================================
   // PAYPAL AUTHENTICATION
