@@ -27,7 +27,7 @@ export default async function DevOverview() {
         What it is
       </H2>
       <P>
-        resell.store is a marketplace where every seller gets their own shop on a subdomain, like <C>maya.resell.store</C>, and an AI
+        resell.store is a marketplace where every seller gets their own shop on a subdomain, like <C>maya.broresell.com</C>, and an AI
         agent that researches prices, writes listings, answers buyers and haggles within limits the seller sets. Buyers pay through
         PayPal, the money is held until the item arrives, and then it&apos;s released to the seller.
       </P>
@@ -75,7 +75,7 @@ export default async function DevOverview() {
           [<C key="b">resell.store/home</C>, <><C>app/(app)</C>: the seller app, behind sign-in</>],
           [<C key="c">resell.store/list/[id]/research</C>, <><C>app/(workspace)</C>: the listing workspace</>],
           [<C key="d">resell.store/checkout/[listing]</C>, <><C>app/(checkout)</C>: buying and offers</>],
-          [<C key="e">maya.resell.store/dutch-oven</C>, <><C>app/store/[store]/[listing]</C>, rewritten from the subdomain</>],
+          [<C key="e">maya.broresell.com/dutch-oven</C>, <><C>app/store/[store]/[listing]</C>, rewritten from the subdomain</>],
           [<C key="f">api.resell.store/v1/listings</C>, <><C>app/api/v1/[[...path]]</C> → <C>lib/server/api</C></>],
           [<C key="g">docs.resell.store/dev</C>, <><C>app/docs/dev</C> (also at <C>resell.store/docs/dev</C>)</>],
           [<C key="h">mcp.resell.store/u/[token]</C>, <><C>app/api/mcp/[[...path]]</C> → <C>@repo/mcp</C></>],

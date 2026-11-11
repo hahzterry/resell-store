@@ -54,7 +54,7 @@ export default async function Shops() {
 
       <H2 id="link">Picking a link</H2>
       <P>
-        Your link becomes your shop&apos;s address: &quot;maya&quot; gives you maya.resell.store. We check it as you type and tell
+        Your link becomes your shop&apos;s address: &quot;maya&quot; gives you maya.broresell.com. We check it as you type and tell
         you if it&apos;s free.
       </P>
       <UL>

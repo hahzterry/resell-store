@@ -195,7 +195,7 @@ const listingExample = {
     { key: "condition", label: "Condition", value: "Like new", source: "you" },
   ],
   photos: [{ id: "3f…", url: "https://files.resell.store/…", alt: null, source: null, is_video: false }],
-  url: "https://maya.resell.store/yellow-le-creuset-dutch-oven-5-5-qt",
+  url: "https://maya.broresell.com/yellow-le-creuset-dutch-oven-5-5-qt",
   edit_url: "https://resell.store/listings/8d1e6c2a-…",
   stats: { views: 214, views_7d: 61, likes: 12, shares: 3, offers: 2, offers_waiting: 1 },
   research: {

@@ -25,7 +25,7 @@ export const accountRoutes = [
         name: "Maya Rivera",
         email: "maya@example.com",
         key: { kind: "api", scopes: ["read", "shops", "listings", "messages", "offers", "orders", "buying", "webhooks"], ask_first: [], max_offer: null },
-        shops: [{ object: "shop", slug: "maya", name: "Maya's closet", url: "https://maya.resell.store" }],
+        shops: [{ object: "shop", slug: "maya", name: "Maya's closet", url: "https://maya.broresell.com" }],
         usage: { requests: 1240, limit: 10000 },
       },
     },

@@ -36,7 +36,7 @@ describe("share image rendering", () => {
     const store = await renderOg(
       <StoreCard
         name="Maya's closet"
-        domain="maya.resell.store"
+        domain="maya.broresell.com"
         tone="mint"
         picture={null}
         location="Lisbon"

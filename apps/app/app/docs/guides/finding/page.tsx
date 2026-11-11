@@ -70,7 +70,7 @@ export default async function Finding() {
         things are for sale and how many have sold. A new shop with nothing up yet says <strong>Opening soon</strong>.
       </P>
       <P>
-        Every shop has its own address, like <strong>maya.resell.store</strong>. On a store page you&apos;ll find:
+        Every shop has its own address, like <strong>maya.broresell.com</strong>. On a store page you&apos;ll find:
       </P>
       <UL>
         <li>The shop&apos;s picture, name, stars, where it is and when it started selling, plus a short bio.</li>

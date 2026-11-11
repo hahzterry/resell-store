@@ -48,7 +48,7 @@ function SellerCard() {
           Maya's closet
         </span>
         <span className="text-sm font-semibold text-secondary">
-          maya.resell.store
+          maya.broresell.com
         </span>
       </div>
       <p className="text-base text-text-muted">

@@ -9,7 +9,7 @@ import type { ArtKey } from "../components/market/art";
 export type StoreTone = "lemon" | "leaf" | "pink" | "mint" | "forest" | "ink";
 
 export type Store = {
-  /** Subdomain: maya → maya.resell.store */
+  /** Subdomain: maya → maya.broresell.com */
   slug: string;
   name: string;
   /** Who runs it, as buyers address them */
@@ -197,7 +197,7 @@ export const categories: Category[] = [
 ];
 
 export type Listing = {
-  /** URL slug inside its store: maya.resell.store/linen-wrap-dress */
+  /** URL slug inside its store: maya.broresell.com/linen-wrap-dress */
   slug: string;
   store: string;
   /** Short name on cards */

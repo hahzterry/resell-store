@@ -71,7 +71,7 @@ const reviewExample = {
   from: "Priya",
   created_at: "2026-10-05T10:00:00.000Z",
   reply: { body: "Thank you, Priya! Enjoy it.", created_at: "2026-10-05T12:00:00.000Z" },
-  listing: { id: "8d1e6c2a-…", title: "Linen wrap dress", url: "https://maya.resell.store/linen-wrap-dress" },
+  listing: { id: "8d1e6c2a-…", title: "Linen wrap dress", url: "https://maya.broresell.com/linen-wrap-dress" },
   shop: { slug: "maya", name: "Maya's closet" },
 };
 

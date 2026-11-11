@@ -81,7 +81,7 @@ export const buyerTools: ToolDef[] = [
     name: "view_store",
     title: "Look at a store",
     description: "A store, everything on its shelves and what it sold lately.",
-    input: z.object({ store: z.string().describe("The store's slug, e.g. \"maya\" for maya.resell.store.") }),
+    input: z.object({ store: z.string().describe("The store's slug, e.g. \"maya\" for maya.broresell.com.") }),
     readOnly: true,
     run: async (c, a) => {
       const s = await c.get<Row & { listings: Row[] }>(`/market/stores/${seg(a.store)}`);

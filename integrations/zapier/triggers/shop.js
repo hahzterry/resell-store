@@ -11,6 +11,6 @@ module.exports = {
       const response = await z.request({ url: `${base()}/shops` });
       return response.data.data.map((s) => ({ id: s.slug, slug: s.slug, name: s.name, url: s.url }));
     },
-    sample: { id: "maya", slug: "maya", name: "Maya's closet", url: "https://maya.resell.store" },
+    sample: { id: "maya", slug: "maya", name: "Maya's closet", url: "https://maya.broresell.com" },
   },
 };

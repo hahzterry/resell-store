@@ -87,8 +87,8 @@ describe("in production (resell.store)", () => {
     vi.stubEnv("NEXT_PUBLIC_ROOT_DOMAIN", "resell.store");
     vi.resetModules();
     const p = await import("./safe-next");
-    expect(p.safeNext("https://maya.resell.store/a")).toBe("https://maya.resell.store/a");
-    expect(p.afterSignIn("https://maya.resell.store/a")).toBe("https://maya.resell.store/a");
+    expect(p.safeNext("https://maya.broresell.com/a")).toBe("https://maya.broresell.com/a");
+    expect(p.afterSignIn("https://maya.broresell.com/a")).toBe("https://maya.broresell.com/a");
     expect(p.signInUrl("/x")).toBe("https://resell.store/welcome?next=%2Fx");
   });
 });

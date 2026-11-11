@@ -88,7 +88,7 @@ describe("checkSlug and isSlugFree", () => {
 
 describe("shopDomain", () => {
   it("reads as the production domain while the root is localhost", () => {
-    expect(shopDomain("maya")).toBe("maya.resell.store");
+    expect(shopDomain("maya")).toBe("maya.broresell.com");
   });
 });
 
@@ -135,7 +135,7 @@ describe("toShopCard and shopPicture", () => {
       slug: "maya",
       name: "Maya's",
       shortName: "Maya's",
-      domain: "maya.resell.store",
+      domain: "maya.broresell.com",
       visibility: "link",
       tone: "leaf",
       icon: "dress",

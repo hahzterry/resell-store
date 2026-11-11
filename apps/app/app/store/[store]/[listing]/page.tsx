@@ -15,7 +15,7 @@ import { acceptedOfferFor, agreedCents } from "../../../../lib/server/commerce";
 import { toDollars } from "../../../../lib/money";
 import { publicReviews, shopRating, toReviewCard } from "../../../../lib/server/reviews";
 
-/* P3 (desktop) and P9 (mobile): maya.resell.store/linen-wrap-dress */
+/* P3 (desktop) and P9 (mobile): maya.broresell.com/linen-wrap-dress */
 
 type Props = { params: Promise<{ store: string; listing: string }> };
 

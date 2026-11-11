@@ -28,7 +28,7 @@ describe("formatPrice", () => {
 describe("readableUrl", () => {
   it("drops the protocol", () => {
     expect(readableUrl("http://maya.localhost:5689/yellow-dutch-oven")).toBe("maya.localhost:5689/yellow-dutch-oven");
-    expect(readableUrl("https://maya.resell.store/")).toBe("maya.resell.store/");
+    expect(readableUrl("https://maya.broresell.com/")).toBe("maya.broresell.com/");
   });
 });
 

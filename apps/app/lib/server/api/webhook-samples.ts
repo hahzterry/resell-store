@@ -42,7 +42,7 @@ const item = {
   price: 185,
   status: "live",
   photo: null,
-  url: "https://maya.resell.store/yellow-le-creuset-dutch-oven-5-5-qt",
+  url: "https://maya.broresell.com/yellow-le-creuset-dutch-oven-5-5-qt",
 };
 const shopRef = { slug: "maya", name: "Maya's closet" };
 

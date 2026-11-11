@@ -161,7 +161,7 @@ On every deploy, Render runs:
 <summary><b>Custom domain and store subdomains</b></summary>
 <br>
 
-Every store lives on its own subdomain (`maya.resell.store`), and `api.`, `docs.` and `mcp.` are subdomains too. `proxy.ts` sends each one to the right part of the app, so the web service needs the root domain and a wildcard:
+Every store lives on its own subdomain (`maya.broresell.com`), and `api.`, `docs.` and `mcp.` are subdomains too. `proxy.ts` sends each one to the right part of the app, so the web service needs the root domain and a wildcard:
 
 1. On the `resell-store` web service, open **Settings → Custom Domains** and add `resell.store`. Render adds `www.resell.store` too and redirects it to the root.
 2. Add `*.resell.store`. Render shows three DNS records for it. Wildcards only work if the root domain also points to Render.

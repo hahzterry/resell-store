@@ -48,7 +48,7 @@ export function storeUrl(store: string, path = "/") {
 
 /** How a store's address reads on the page. Always the production domain. */
 export function storeDomain(store: string) {
-  return `${store}.resell.store`;
+  return `${store}.${rootDomain}`;
 }
 
 /**

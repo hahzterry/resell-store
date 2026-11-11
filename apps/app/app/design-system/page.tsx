@@ -433,7 +433,7 @@ export default function DesignSystemPage() {
             <SellerCard
               initial="M"
               name="Maya's closet"
-              handle="maya.resell.store"
+              handle="maya.broresell.com"
               bio="Good things I no longer wear, looking for someone who will."
               stats={[
                 { value: 38, label: "listed" },

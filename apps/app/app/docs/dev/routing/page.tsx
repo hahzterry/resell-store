@@ -56,7 +56,7 @@ export default async function Routing() {
           the session routes and API calls work on store subdomains too.
         </li>
         <li>
-          <strong>Marketplace host.</strong> <C>/store/maya/dutch-oven</C> redirects to <C>maya.resell.store/dutch-oven</C>, so
+          <strong>Marketplace host.</strong> <C>/store/maya/dutch-oven</C> redirects to <C>maya.broresell.com/dutch-oven</C>, so
           store links can stay relative. Share images (<C>opengraph-image</C>, <C>twitter-image</C>) are served in place, because
           that&apos;s where <C>og:image</C> points.
         </li>
@@ -101,11 +101,11 @@ export default async function Routing() {
         head={["Function", "Production", "Localhost"]}
         rows={[
           [<C key="a">siteUrl(&quot;/discover&quot;)</C>, "https://resell.store/discover", "http://localhost:5689/discover"],
-          [<C key="b">storeUrl(&quot;maya&quot;, &quot;/x&quot;)</C>, "https://maya.resell.store/x", "http://maya.localhost:5689/x"],
+          [<C key="b">storeUrl(&quot;maya&quot;, &quot;/x&quot;)</C>, "https://maya.broresell.com/x", "http://maya.localhost:5689/x"],
           [<C key="c">apiUrl(&quot;/me&quot;)</C>, "https://api.resell.store/v1/me", "http://localhost:5689/api/v1/me"],
           [<C key="d">docsUrl(&quot;/dev&quot;)</C>, "https://docs.resell.store/dev", "http://localhost:5689/docs/dev"],
           [<C key="e">mcpUrl(&quot;/buy&quot;)</C>, "https://mcp.resell.store/buy", "http://localhost:5689/api/mcp/buy"],
-          [<C key="f">storeDomain(&quot;maya&quot;)</C>, "maya.resell.store", "maya.resell.store (display only)"],
+          [<C key="f">storeDomain(&quot;maya&quot;)</C>, "maya.broresell.com", "maya.broresell.com (display only)"],
         ]}
       />
       <P>

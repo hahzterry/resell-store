@@ -33,7 +33,7 @@ export const shops: Shop[] = [
     slug: "mayas-closet",
     name: "Maya's closet",
     shortName: "Maya's closet",
-    domain: "maya.resell.store",
+    domain: "maya.broresell.com",
     visibility: "public",
     tone: "pink",
     icon: "dress",

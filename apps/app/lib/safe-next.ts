@@ -18,7 +18,7 @@ export function safePath(raw: string | null | undefined) {
 /**
  * Somewhere to come back to after signing in, or null if it isn't safe: a relative
  * path, or an absolute URL on the marketplace or one of its store subdomains (so a
- * sign-in started on maya.resell.store/linen-wrap-dress lands back there).
+ * sign-in started on maya.broresell.com/linen-wrap-dress lands back there).
  */
 export function safeNext(raw: string | null | undefined): string | null {
   if (!raw) return null;

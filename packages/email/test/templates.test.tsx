@@ -211,7 +211,7 @@ describe("NewFromShopEmail", () => {
       title: `Item ${i + 1}`,
       price: 10 + i,
       imageUrl: null,
-      url: `https://maya.resell.store/item-${i + 1}`,
+      url: `https://maya.broresell.com/item-${i + 1}`,
     }));
     const { text } = await renderText(NewFromShopEmail, { ...props, items });
     expect(text).toContain("Item 6");

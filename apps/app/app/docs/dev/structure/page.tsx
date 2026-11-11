@@ -59,7 +59,7 @@ docker-compose.yml          local Postgres 17 + pgvector on port 5433`}
           [<C key="d">(workspace)</C>, "The listing workspace, /list/[id]/research → details → photos → words → publish, with the agent chat beside it"],
           [<C key="e">(market)</C>, "The public marketplace on the root domain: discover, stores, agent, account, messages"],
           [<C key="f">(checkout)</C>, "/checkout/[listing] and /offer/[listing]"],
-          [<C key="g">store/[store]</C>, "One seller's store. proxy.ts rewrites maya.resell.store/x onto /store/maya/x"],
+          [<C key="g">store/[store]</C>, "One seller's store. proxy.ts rewrites maya.broresell.com/x onto /store/maya/x"],
           [<C key="h">docs</C>, "This site (docs.resell.store, or /docs)"],
           [<C key="j">design-system</C>, "Every foundation and component from @repo/ui on one page"],
           [<C key="l">api/v1</C>, "The public API; the routes themselves are in lib/server/api"],

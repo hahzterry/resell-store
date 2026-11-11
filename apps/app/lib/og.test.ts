@@ -84,7 +84,7 @@ describe("storeShare", () => {
     expect(m.title).toBe("Maya's closet · resell.store");
     expect(m.alternates?.canonical).toBe("http://maya.localhost:5689/");
     expect(m.openGraph).toMatchObject({ url: "http://maya.localhost:5689/", title: "Maya's closet" });
-    expect(m.description).toBe("Clothes I loved. Lisbon · 8 for sale. Shop it at maya.resell.store.");
+    expect(m.description).toBe("Clothes I loved. Lisbon · 8 for sale. Shop it at maya.broresell.com.");
     // The image comes from app/store/[store]/opengraph-image.tsx, not from here
     expect((m.openGraph as { images?: unknown }).images).toBeUndefined();
   });

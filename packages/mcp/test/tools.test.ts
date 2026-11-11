@@ -21,7 +21,7 @@ function account(over: Partial<Account["key"]> = {}): Account {
     name: "Maya",
     email: "maya@x.test",
     key: { kind: "agent", scopes: [...scopes], ask_first: [], ...over },
-    shops: [{ slug: "maya", name: "Maya's closet", url: "https://maya.resell.store" }],
+    shops: [{ slug: "maya", name: "Maya's closet", url: "https://maya.broresell.com" }],
   };
 }
 
@@ -138,7 +138,7 @@ describe("tool handlers call the right API path", () => {
       id: "o1",
       status: "open",
       amount: 150,
-      listing: { id: "l1", title: "Dutch oven", price: 185, url: "https://maya.resell.store/oven" },
+      listing: { id: "l1", title: "Dutch oven", price: 185, url: "https://maya.broresell.com/oven" },
       shop: { name: "Maya's closet" },
       secret_field: "x",
     }));

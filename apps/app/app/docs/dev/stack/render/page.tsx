@@ -77,7 +77,7 @@ export default async function RenderPage() {
         </li>
         <li>
           Two custom domains: <C>resell.store</C> and <C>*.resell.store</C>. The wildcard is what lets every shop have its own
-          address (<C>maya.resell.store</C>), and it also covers <C>api.</C>, <C>docs.</C> and <C>mcp.</C>, which <C>proxy.ts</C>{" "}
+          address (<C>maya.broresell.com</C>), and it also covers <C>api.</C>, <C>docs.</C> and <C>mcp.</C>, which <C>proxy.ts</C>{" "}
           rewrites to <C>/api/v1</C>, <C>/docs</C> and <C>/api/mcp</C>. One service serves them all, and the sign-in cookie is shared
           on <C>.resell.store</C>.
         </li>

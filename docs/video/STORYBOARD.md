@@ -106,7 +106,7 @@ Cut on the beat: c3 zoomed on the question chips ("Yes, the original box / No bo
 - duration: 8s
 - transition_in: zoom
 - voiceover: "One tap, and it's live in her own shop, with a link she can share anywhere."
-- on_screen: "maya.resell.store" URL pill; "Link copied. Go show it off." toast
+- on_screen: "maya.broresell.com" URL pill; "Link copied. Go show it off." toast
 - assets: captures/desktop/c7-publish.png, captures/desktop/p2-store.png, captures/phone/m-p2-store.png
 - poster: 6s
 
@@ -193,7 +193,7 @@ The stat counts up for 2s, then swaps for the line in big type. The music resolv
 - transition_in: push
 - voiceover: "Render runs it all: the app, every shop on its own subdomain, the Postgres database, and a background workflow that expires offers, nudges sellers to ship, and releases payouts on time."
 - on_screen: "Render" · "Hosts the app, every shop at name.resell.store, plus api., docs. and mcp." · "Postgres with pgvector for search" · "Render Workflows run the timed jobs: offers expire · ship-by reminders · unshipped orders cancel · 'did it arrive?' check · payouts release · quiet disputes escalate" · "One render.yaml deploys the lot"
-- assets: render.yaml (services: resell-store web, resell-db, resell-sweeps workflow, resell-sweeps-cron), captures/desktop/p2-store.png (maya.resell.store URL), LIVE Render dashboard recording (optional)
+- assets: render.yaml (services: resell-store web, resell-db, resell-sweeps workflow, resell-sweeps-cron), captures/desktop/p2-store.png (maya.broresell.com URL), LIVE Render dashboard recording (optional)
 - poster: 5s
 
 Same template for frames 15–18: the sponsor name big on the left in Bricolage, and on the right a mini diagram or the app screen it powers, with 3–5 short lines popping in one by one. For Render, draw four service boxes (web · Postgres · Workflow · cron) wired together, with shop URLs (maya., secondshutter.) peeling off the web box. The Workflow box ticks through its timed jobs like a checklist.

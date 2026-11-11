@@ -38,7 +38,7 @@ const cardExample = {
   open_to_offers: true,
   sold: false,
   just_listed: false,
-  url: "https://maya.resell.store/yellow-le-creuset-dutch-oven-5-5-qt",
+  url: "https://maya.broresell.com/yellow-le-creuset-dutch-oven-5-5-qt",
   seller: { name: "Maya's closet" },
   liked: false,
 };
@@ -56,7 +56,7 @@ const storeExample = {
   sold: 20,
   paused: false,
   picture_url: null,
-  url: "https://maya.resell.store",
+  url: "https://maya.broresell.com",
   followers: 105,
   following: false,
 };
@@ -293,7 +293,7 @@ export const marketRoutes = [
     example: {
       response: {
         object: "list",
-        data: [{ object: "followed_store", slug: "maya", name: "Maya's closet", for_sale: 12, has_new: true, newest: [{ id: "8d1e…", title: "Yellow Le Creuset dutch oven, 5.5 qt", price: 185, url: "https://maya.resell.store/…" }] }],
+        data: [{ object: "followed_store", slug: "maya", name: "Maya's closet", for_sale: 12, has_new: true, newest: [{ id: "8d1e…", title: "Yellow Le Creuset dutch oven, 5.5 qt", price: 185, url: "https://maya.broresell.com/…" }] }],
         total: 1,
         has_more: false,
       },
@@ -340,7 +340,7 @@ export const marketRoutes = [
       response: {
         object: "share",
         listing: "8d1e6c2a-…",
-        url: "https://maya.resell.store/yellow-le-creuset-dutch-oven-5-5-qt?ref=whatsapp",
+        url: "https://maya.broresell.com/yellow-le-creuset-dutch-oven-5-5-qt?ref=whatsapp",
         text: "Yellow Le Creuset dutch oven, 5.5 qt, $185 at Maya's closet",
       },
     },

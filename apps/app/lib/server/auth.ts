@@ -95,18 +95,16 @@ export const auth = betterAuth({
     ? {}
     : { crossSubDomainCookies: { enabled: true, domain: `.${rootHostname}` } },
   socialProviders: paypalSignInEnabled
-    ? {
-        paypal: {
-          clientId: process.env.PAYPAL_CLIENT_ID!,
-          clientSecret: process.env.PAYPAL_CLIENT_SECRET!,
-          environment: paypalLive ? "live" : "sandbox",
-          // Better Auth sends no scope and PayPal answers that with "Something went
-          // wrong". `scope` can't go in additionalParams (reserved), so it rides here
-          authorizationEndpoint: `${paypalWeb}/signin/authorize?scope=${encodeURIComponent("openid email profile")}`,
-          getUserInfo: paypalProfile,
-        },
-      }
-    : {},
+  ? {
+      paypal: {
+        clientId: process.env.PAYPAL_CLIENT_ID!,
+        clientSecret: process.env.PAYPAL_CLIENT_SECRET!,
+        environment: paypalLive ? "live" : "sandbox",
+        authorizationEndpoint: `${paypalWeb}/connect?flowEntry=static&scope=${encodeURIComponent("openid email profile")}`,
+        getUserInfo: paypalProfile,
+      },
+    }
+  : {},
   session: {
     expiresIn: 60 * 60 * 24 * 30,
     cookieCache: { enabled: true, maxAge: 60 * 5 },

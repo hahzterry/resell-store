@@ -47,7 +47,7 @@ describe("building addresses in dev", () => {
   });
 
   it("always shows the production store domain", () => {
-    expect(urls.storeDomain("maya")).toBe("maya.resell.store");
+    expect(urls.storeDomain("maya")).toBe("maya.broresell.com");
   });
 
   it("puts docs, MCP and the API under the marketplace", () => {
@@ -97,7 +97,7 @@ describe("in production (resell.store)", () => {
   it("uses https and the service subdomains", async () => {
     const p = await prod();
     expect(p.siteUrl("/x")).toBe("https://resell.store/x");
-    expect(p.storeUrl("maya")).toBe("https://maya.resell.store/");
+    expect(p.storeUrl("maya")).toBe("https://maya.broresell.com/");
     expect(p.docsUrl()).toBe("https://docs.resell.store/");
     expect(p.docsUrl("/api")).toBe("https://docs.resell.store/api");
     expect(p.mcpUrl("/seller")).toBe("https://mcp.resell.store/seller");
@@ -107,9 +107,9 @@ describe("in production (resell.store)", () => {
   it("shares the cookie across subdomains, so no handoff", async () => {
     const p = await prod();
     expect(p.needsSessionHandoff).toBe(false);
-    expect(p.storeFromHost("maya.resell.store")).toBe("maya");
+    expect(p.storeFromHost("maya.broresell.com")).toBe("maya");
     expect(p.serviceFromHost("api.resell.store")).toBe("api");
-    expect(p.zoneUrl("https://maya.resell.store/a")?.href).toBe("https://maya.resell.store/a");
-    expect(p.zoneUrl("http://maya.resell.store/a")).toBeNull();
+    expect(p.zoneUrl("https://maya.broresell.com/a")?.href).toBe("https://maya.broresell.com/a");
+    expect(p.zoneUrl("http://maya.broresell.com/a")).toBeNull();
   });
 });

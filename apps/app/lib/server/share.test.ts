@@ -53,7 +53,7 @@ describe("storePageMetadata", () => {
     expect(m.openGraph).toMatchObject({ title: "Maya's closet", url: "http://maya.localhost:5689/", siteName: "resell.store" });
     expect(m.twitter).toMatchObject({ card: "summary_large_image" });
     // Only listed things count
-    expect(m.description).toBe("Clothes I loved. Lisbon · 1 for sale. Shop it at maya.resell.store.");
+    expect(m.description).toBe("Clothes I loved. Lisbon · 1 for sale. Shop it at maya.broresell.com.");
   });
 
   it("a link-only store can be shared by its URL", async () => {
@@ -135,7 +135,7 @@ describe("storeImage", () => {
     const card = (await storeImage("maya")) as unknown as Card;
     expect(card.props).toMatchObject({
       name: "Maya's closet",
-      domain: "maya.resell.store",
+      domain: "maya.broresell.com",
       tone: "mint",
       location: "Lisbon",
       forSale: 1,

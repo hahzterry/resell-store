@@ -24,7 +24,7 @@ const threadExample = {
     id: "8d1e6c2a-…",
     title: "Yellow Le Creuset dutch oven, 5.5 qt",
     photo: "https://files.resell.store/…",
-    url: "https://maya.resell.store/yellow-le-creuset-dutch-oven-5-5-qt",
+    url: "https://maya.broresell.com/yellow-le-creuset-dutch-oven-5-5-qt",
   },
   preview: "Is the lid included?",
   last_from: "them",

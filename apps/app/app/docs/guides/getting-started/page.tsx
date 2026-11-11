@@ -109,8 +109,8 @@ export default async function GettingStarted() {
 
       <H2 id="address">Your store&apos;s own address</H2>
       <P>
-        Every shop gets its own web address. If Maya calls her shop &quot;maya&quot;, it lives at maya.resell.store, and each
-        listing gets its own page under it, like maya.resell.store/yellow-le-creuset-dutch-oven. Share those links anywhere. Being
+        Every shop gets its own web address. If Maya calls her shop &quot;maya&quot;, it lives at maya.broresell.com, and each
+        listing gets its own page under it, like maya.broresell.com/yellow-le-creuset-dutch-oven. Share those links anywhere. Being
         signed in on resell.store means you&apos;re signed in on every store too.
       </P>
 

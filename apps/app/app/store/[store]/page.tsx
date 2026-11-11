@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return storePageMetadata((await params).store, viewer?.id);
 }
 
-/** P2: a store's home page, e.g. maya.resell.store. */
+/** P2: a store's home page, e.g. maya.broresell.com. */
 export default async function StorePage({ params }: Props) {
   const viewer = await publicViewer();
   const found = await getPublicStore((await params).store, viewer?.id);

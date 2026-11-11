@@ -1,9 +1,9 @@
 import { storeImage } from "../../../lib/server/og-images";
 
 /*
- * maya.resell.store's share image. Pages link it as
+ * maya.broresell.com's share image. Pages link it as
  * resell.store/store/maya/opengraph-image, which proxy.ts serves on the
- * marketplace host; maya.resell.store/opengraph-image reaches it too.
+ * marketplace host; maya.broresell.com/opengraph-image reaches it too.
  */
 
 export const alt = "A store on resell.store";

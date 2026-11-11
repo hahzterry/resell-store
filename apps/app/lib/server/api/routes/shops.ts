@@ -41,7 +41,7 @@ const shopExample = {
   tone: "lemon",
   visibility: "public",
   paused: false,
-  url: "https://maya.resell.store",
+  url: "https://maya.broresell.com",
   picture_url: null,
   agent: { answer_questions: true, haggle: true, lowest_percent: 15, ask_hold: true },
   counts: { live: 12, drafts: 2, sold: 20 },
@@ -88,7 +88,7 @@ export const shopRoutes = [
     description: "Opens a new shop at {slug}.resell.store. Slugs are unique across resell.store.",
     body: z.object({
       name: z.string().trim().min(1, "Give the shop a name.").max(60),
-      slug: z.string().trim().toLowerCase().min(1).max(32).describe("The subdomain, e.g. \"maya\" for maya.resell.store."),
+      slug: z.string().trim().toLowerCase().min(1).max(32).describe("The subdomain, e.g. \"maya\" for maya.broresell.com."),
       category: z.string().trim().max(40).optional(),
       about: z.string().trim().max(300).optional(),
       tone: z.enum(tones).default("lemon"),

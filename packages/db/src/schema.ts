@@ -272,7 +272,7 @@ export const listing = pgTable(
     shopId: text("shop_id")
       .notNull()
       .references(() => shop.id, { onDelete: "cascade" }),
-    /** Path inside the store: maya.resell.store/{slug}. Set on publish. */
+    /** Path inside the store: maya.broresell.com/{slug}. Set on publish. */
     slug: text("slug"),
     status: text("status").$type<ListingStatus>().notNull().default("draft"),
     visibility: text("visibility").$type<ListingVisibility>().notNull().default("everyone"),

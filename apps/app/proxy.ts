@@ -2,7 +2,7 @@ import { NextResponse, type NextRequest } from "next/server";
 import { needsSessionHandoff, serviceFromHost, storeFromHost, storeUrl } from "./lib/urls";
 
 /*
- * Store subdomains are rewritten onto /store/{store}, so maya.resell.store/linen-wrap-dress
+ * Store subdomains are rewritten onto /store/{store}, so maya.broresell.com/linen-wrap-dress
  * renders app/store/[store]/[listing]. Auth is checked in each layout, not here.
  *
  * Session handoff (dev on localhost only, see needsSessionHandoff): a store host can't
@@ -64,7 +64,7 @@ export default function proxy(req: NextRequest) {
   if (!store) {
     // Served here, not redirected to the subdomain like other /store/ paths
     if (shareImage) return;
-    // /store/maya/x on the marketplace host → maya.resell.store/x, so store links stay relative
+    // /store/maya/x on the marketplace host → maya.broresell.com/x, so store links stay relative
     const match = url.pathname.match(/^\/store\/([^/]+)(\/.*)?$/);
     if (match) return NextResponse.redirect(storeUrl(match[1]!, (match[2] ?? "/") + url.search));
     return;

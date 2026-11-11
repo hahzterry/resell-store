@@ -81,12 +81,12 @@ export default function NewFromShopEmail({ shop, items }: NewFromShopEmailProps)
 }
 
 NewFromShopEmail.PreviewProps = {
-  shop: { name: "Maya's Closet", url: "https://maya.resell.store" },
+  shop: { name: "Maya's Closet", url: "https://maya.broresell.com" },
   items: [
-    { title: "Linen wrap dress", price: 24, imageUrl: asset("dress.png"), url: "https://maya.resell.store/linen-wrap-dress" },
-    { title: "Pink cotton sweater", price: 32, imageUrl: asset("sweater.png"), url: "https://maya.resell.store/pink-sweater" },
-    { title: "Brass desk lamp", price: 45, imageUrl: asset("lamp.png"), url: "https://maya.resell.store/brass-lamp" },
-    { title: "Canvas market tote", price: 15, imageUrl: asset("tote.png"), url: "https://maya.resell.store/canvas-tote" },
+    { title: "Linen wrap dress", price: 24, imageUrl: asset("dress.png"), url: "https://maya.broresell.com/linen-wrap-dress" },
+    { title: "Pink cotton sweater", price: 32, imageUrl: asset("sweater.png"), url: "https://maya.broresell.com/pink-sweater" },
+    { title: "Brass desk lamp", price: 45, imageUrl: asset("lamp.png"), url: "https://maya.broresell.com/brass-lamp" },
+    { title: "Canvas market tote", price: 15, imageUrl: asset("tote.png"), url: "https://maya.broresell.com/canvas-tote" },
   ],
 } satisfies NewFromShopEmailProps;
 

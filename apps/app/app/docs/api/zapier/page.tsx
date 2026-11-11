@@ -27,7 +27,7 @@ const saleFields = {
   shipping: 18,
   total: 188,
   listing__title: "Yellow Le Creuset dutch oven, 5.5 qt",
-  listing__url: "https://maya.resell.store/yellow-le-creuset-dutch-oven-5-5-qt",
+  listing__url: "https://maya.broresell.com/yellow-le-creuset-dutch-oven-5-5-qt",
   shop__slug: "maya",
   buyer__name: "Jess",
   ship_to__name: "Jess Park",

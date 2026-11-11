@@ -245,7 +245,7 @@ export function SiteCard() {
   );
 }
 
-/* Store: maya.resell.store */
+/* Store: maya.broresell.com */
 
 export type StoreCardProps = {
   name: string;
@@ -380,7 +380,7 @@ export function StoreCard({ name, domain, tone, picture, location, forSale, tagl
   );
 }
 
-/* Listing: maya.resell.store/linen-wrap-dress */
+/* Listing: maya.broresell.com/linen-wrap-dress */
 
 export type ListingCardProps = {
   title: string;
