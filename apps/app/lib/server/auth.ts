@@ -85,25 +85,51 @@ export const auth = betterAuth({
       verification: schema.verification,
     },
   }),
-  // Stores live on subdomains; they read the same session
-  trustedOrigins: [`${protocol}://${rootDomain}`, `${protocol}://*.${rootDomain}`],
-  // In prod the session cookie is set on .resell.store, so every store reads it. Browsers
-  // won't send a Domain=localhost cookie to *.localhost, so in dev each store gets its own
-  // host-only copy of the same session through a one-time-token handoff instead (proxy.ts,
-  // app/api/session/*). A dotted dev root (e.g. lvh.me:5689) shares the cookie like prod.
+  // ==========================================
+  // BRORESELL.COM - TRUSTED ORIGINS
+  // ==========================================
+  // Allow the main marketplace, www, and seller subdomains.
+  // Preserve dynamically configured origins for development.
+
+  trustedOrigins: [
+    `${protocol}://${rootDomain}`,
+    `${protocol}://*.${rootDomain}`,
+    "https://broresell.com",
+    "https://www.broresell.com",
+    "https://*.broresell.com",
+  ],
+
+  // ==========================================
+  // BRORESELL.COM - SHARED SESSIONS
+  // ==========================================
+  // Production sessions are shared across .broresell.com.
+  // In development, localhost uses host-only cookies
+  // and the existing one-time-token session handoff.
+
   advanced: isLocal
     ? {}
-    : { crossSubDomainCookies: { enabled: true, domain: `.${rootHostname}` } },
-  socialProviders: paypalSignInEnabled
-  ? {
-      paypal: {
-        clientId: process.env.PAYPAL_CLIENT_ID!,
-        clientSecret: process.env.PAYPAL_CLIENT_SECRET!,
-        environment: paypalLive ? "live" : "sandbox",
-        authorizationEndpoint: `${paypalWeb}/connect?flowEntry=static&scope=${encodeURIComponent("openid email profile")}`,
-        getUserInfo: paypalProfile,
+    : {
+        crossSubDomainCookies: {
+          enabled: true,
+          domain: `.${rootHostname}`,
+        },
       },
-    }
+
+  // ==========================================
+  // PAYPAL AUTHENTICATION
+  // ==========================================
+  // Preserve existing PayPal Sandbox/Live configuration.
+
+  socialProviders: paypalSignInEnabled
+    ? {
+        paypal: {
+          clientId: process.env.PAYPAL_CLIENT_ID!,
+          clientSecret: process.env.PAYPAL_CLIENT_SECRET!,
+          environment: paypalLive ? "live" : "sandbox",
+          authorizationEndpoint: `${paypalWeb}/connect?flowEntry=static&scope=${encodeURIComponent("openid email profile")}`,
+          getUserInfo: paypalProfile,
+        },
+      }
   : {},
   session: {
     expiresIn: 60 * 60 * 24 * 30,
